@@ -6,7 +6,8 @@ window.onload = () => loadModel();
 
 function loadModel() {
     const loader = new GLTFLoader();
-    loader.load('../assets/avaturnAnimations.glb',
+    const url = "https://ram-arjun-varma.github.io/Avatar/Akshay.glb"
+    loader.load(url,
         (gltf) => {
             setupScene(gltf);
             document.getElementById('avatar-loading').style.display = 'none';
