@@ -6,7 +6,7 @@ window.onload = () => loadModel();
 
 function loadModel() {
     const loader = new GLTFLoader();
-    const url = "https://ram-arjun-varma.github.io/Avatar/Akshay.glb"
+    const url = "../assets/Avatars/avaturnAnimations.glb"
     loader.load(url,
         (gltf) => {
             setupScene(gltf);
@@ -145,8 +145,8 @@ function setupScene(gltf) {
     }
 
     animate();
-    // waveAction.play();
+    waveAction.play();
     // walkAction.play();
-    pushAction.play();
+    // pushAction.play();
     // armStrechingAction.play();
 }
