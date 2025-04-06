@@ -6,7 +6,7 @@ window.onload = () => loadModel();
 
 function loadModel() {
     const loader = new GLTFLoader();
-    const url = "../assets/Avatars/avaturnAnimations.glb"
+    const url = "https://akshayvarmam.github.io/Avatars/Akshay.glb"
     loader.load(url,
         (gltf) => {
             setupScene(gltf);
